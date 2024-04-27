@@ -1,0 +1,93 @@
+/* Navigation section */
+#navbar{
+
+    flex-direction: column;
+}
+#navbar ul{
+    flex-wrap: wrap;
+}
+
+#navbar ul  li{
+    padding: 0px 0px;
+}
+
+
+#navbar ul li a{
+    font-size: 0.9rem;
+    padding: 0px 5px;
+}
+.search{
+    display:block;
+    text-align: center;
+    padding:5px;
+    align-items: center;
+}
+
+    .search input{
+        width: 5.5rem;
+        height: 1.3rem;
+    }
+    .search input:hover{
+        width: 15.5rem;
+        height: 1.3rem;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+.btn{
+    font-size: 8px;
+padding: 0px 2px;
+}
+
+/* home section */
+
+#home{
+height: 387px;
+}
+
+
+#home::before{
+height: 513px;
+}
+
+#home p{
+    font-size: 1rem;
+}
+
+
+/* sevices section */
+#services{
+    flex-direction: column;
+}
+#services .box{
+    padding: 10px 10px;
+    margin: 5px 10px;
+    font-family: 'Turret Road', cursive;
+}
+#services .box img {
+    height:70px;
+
+}
+/* sponsors section */
+
+#sponsors{
+flex-wrap: wrap;
+}
+.sponsors-box img{
+    height: 65px;
+    width: 150px;
+    margin: 5px 5px;
+    padding: 0px 5px;
+}
+
+/* contact us section */
+#contact-box form{
+width: 80%;
+}
+
+/* footer */
+
+/* utility */
+.h1{
+   font-size: 1.2rem;
+}

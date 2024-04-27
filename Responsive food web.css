@@ -1,0 +1,266 @@
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* nabigationbar */
+#navbar::before{
+content: "";
+background-color: #878180;
+position:absolute;
+top:0;
+height: 100%;
+width:100%;
+z-index:-1;
+opacity:0.8;
+}
+
+#navbar{
+display: flex;
+align-items: center;
+display:flex;
+position: sticky;
+top: 0px;
+}
+/* navigationbar logo */
+#logo{
+    margin :5px;
+    padding:0px;
+}
+#logo img {
+    height: 70px;
+    margin: 0px 0px;
+    padding-left: 10px;
+}
+/* navigation bar listing style */
+#navbar ul  {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    flex-wrap: wrap;
+}
+#navbar ul li{
+    list-style:none;
+    font-size:1.5rem;
+    padding: 0px 40px;
+    display:flex;
+}
+#navbar ul li a{
+    color:rgb(255 165 0);
+display:block;
+padding:3px 5px;
+border-radius:3px;
+text-decoration: none;
+display:flex;
+}
+#navbar ul li a:hover{
+color: rgb(255, 255, 255);
+background-color:black;
+border: 1px solid lightyellow;
+}
+.search{
+    display:block;
+    text-align: center;
+    padding:5px;
+    align-items: center;
+}
+.search input{
+    border-radius: 5px;
+    width: 5.5rem;
+    height: 1.3rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: #bcdbdb;
+}
+.search input:hover{
+    content:Search here;
+    border-radius: 10px;
+    width: 25.5rem;
+    height: 2.3rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: #ffffff;
+}
+
+
+/* home section*/
+#home{
+    display:flex;
+    flex-direction: column;
+    height: 558px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    background:url('images/foodimage3.jpg') no-repeat center center/cover;
+    height: 660px;
+    width:100%;
+    z-index:-1;
+    opacity:0.8;
+}
+
+#home h1{
+    color:black;
+    text-align:center;
+    font-family: 'Fredericka the Great', cursive;
+}
+#home p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Turret Road', cursive;
+    -webkit-text-stroke: 1px #000000;
+}
+    #services p{
+    text-align: center;
+    }
+
+/* utility classes */
+.h1{
+    font-size: 3.8rem;
+    padding:15px;
+    -webkit-text-stroke: 2px black;
+}
+.h2{
+    font-size: 2.8rem;
+    padding: 16px;
+    text-align:center;
+    font-family: 'Supermercado One', cursive;
+    -webkit-text-stroke: 2px rgb(207, 190, 190);
+}
+.h3{
+    text-align: center;
+    font-family: 'Supermercado One', cursive;
+    -webkit-text-stroke: 1px rgb(127, 128, 119);
+}
+.btn{
+    padding:3px 10px;
+    margin-top: 30px;
+    border-radius:5px;
+    background-color: #6673ce;
+    color:white;
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor:pointer;
+}
+.btn:active{
+    padding:3px 10px;
+    margin-top: 30px;
+    border-radius:5px;
+    background-color: #ffffff;
+    color:rgb(0, 0, 0);
+    border: 2px solid rgb(236, 14, 14);
+}
+.center{
+    text-align: center;
+}
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+ 
+}
+#services .box{
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 30px 30px;
+    margin: 15px 124px;
+    background-color: #bfe5f4;
+    font-family: 'Turret Road', cursive;
+}
+#services .box:hover{
+    border: 10px solid lightyellow;
+    border-radius: 20px;
+    padding: 30px 30px;
+    margin: 15px 124px;
+    background-color:#c4f1da;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin:auto;
+}
+/* sposcers section */
+#sponsors-section{
+    position: relative;
+}
+#sponsors{
+    display:flex;
+    justify-content: center;
+}
+#sponsors .sponsors-box{
+display: flex;
+text-align:  center;
+justify-content: center;
+}
+.sponsors-box img{
+    height: 130px;
+    width: 300px;
+    margin: 10px 10px;
+    padding: 25px 30px;
+}
+#sponsors-section::before{
+    content: "";
+    position: absolute;
+    background: url("images/foods.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+
+}
+/* all body */
+
+/* contact */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+     position:absolute;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 100%;
+     background: url(images/tecimage.jpg) no-repeat center center/cover;
+     z-index:-1;
+     opacity: 0.4;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+width: 100%;
+padding: .5rem;
+border-radius: 10px;
+font-size: 1.1rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box lavel{
+    font-size: 1.4rem;
+}
+footer{
+    background-color:black ;
+    color:white;
+}
